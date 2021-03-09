@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="Project Test Suite" tests="5" assertions="38" errors="0" failures="0" skipped="0" time="47.134766">
+    <testsuite name="App\Tests\DefaultControllerTest" file="C:\Users\ThinkPad\Documents\projets\symfony_cw24\tests\DefaultControllerTest.php" tests="2" assertions="10" errors="0" failures="0" skipped="0" time="40.662174">
+      <testcase name="testIndex" class="App\Tests\DefaultControllerTest" classname="App.Tests.DefaultControllerTest" file="C:\Users\ThinkPad\Documents\projets\symfony_cw24\tests\DefaultControllerTest.php" line="9" assertions="7" time="39.923403"/>
+      <testcase name="testGoToSignIn" class="App\Tests\DefaultControllerTest" classname="App.Tests.DefaultControllerTest" file="C:\Users\ThinkPad\Documents\projets\symfony_cw24\tests\DefaultControllerTest.php" line="20" assertions="3" time="0.738771"/>
+    </testsuite>
+    <testsuite name="App\Tests\SecurityControllerTest" file="C:\Users\ThinkPad\Documents\projets\symfony_cw24\tests\SecurityControllerTest.php" tests="3" assertions="28" errors="0" failures="0" skipped="0" time="6.472592">
+      <testcase name="testLoginLogout" class="App\Tests\SecurityControllerTest" classname="App.Tests.SecurityControllerTest" file="C:\Users\ThinkPad\Documents\projets\symfony_cw24\tests\SecurityControllerTest.php" line="10" assertions="19" time="2.152354"/>
+      <testcase name="testLoginError" class="App\Tests\SecurityControllerTest" classname="App.Tests.SecurityControllerTest" file="C:\Users\ThinkPad\Documents\projets\symfony_cw24\tests\SecurityControllerTest.php" line="43" assertions="3" time="0.971044"/>
+      <testcase name="testGetFormAddArticle" class="App\Tests\SecurityControllerTest" classname="App.Tests.SecurityControllerTest" file="C:\Users\ThinkPad\Documents\projets\symfony_cw24\tests\SecurityControllerTest.php" line="74" assertions="6" time="3.349194"/>
+    </testsuite>
+  </testsuite>
+</testsuites>

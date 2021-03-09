@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for C:\Users\ThinkPad\Documents\projets\symfony_cw24\src</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href=".css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/nv.d3.min.css" rel="stylesheet" type="text/css">
+  <link href=".css/style.css" rel="stylesheet" type="text/css">
+  <link href=".css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="index.html">C:\Users\ThinkPad\Documents\projets\symfony_cw24\src</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Kernel.php.html#10">App\Kernel</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/RegistrationController.php.html#19">App\Controller\RegistrationController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security/EmailVerifier.php.html#13">App\Security\EmailVerifier</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/ArticleFixtures.php.html#11">App\DataFixtures\ArticleFixtures</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/CategoryFixtures.php.html#10">App\DataFixtures\CategoryFixtures</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/UserFixtures.php.html#11">App\DataFixtures\UserFixtures</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#18">App\Controller\CategoryController</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/CategoryType.php.html#10">App\Form\CategoryType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/RegistrationFormType.php.html#15">App\Form\RegistrationFormType</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#15">App\Entity\Category</a></td><td class="text-right">11%</td></tr>
+       <tr><td><a href="Entity/User.php.html#17">App\Entity\User</a></td><td class="text-right">19%</td></tr>
+       <tr><td><a href="Repository/UserRepository.php.html#18">App\Repository\UserRepository</a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="Controller/ArticleController.php.html#19">App\Controller\ArticleController</a></td><td class="text-right">28%</td></tr>
+       <tr><td><a href="Entity/Article.php.html#13">App\Entity\Article</a></td><td class="text-right">59%</td></tr>
+       <tr><td><a href="Twig/ToolsExtension.php.html#9">App\Twig\ToolsExtension</a></td><td class="text-right">62%</td></tr>
+       <tr><td><a href="Controller/SecurityController.php.html#10">App\Controller\SecurityController</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Security/Voter/ArticleVoter.php.html#10">App\Security\Voter\ArticleVoter</a></td><td class="text-right">80%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Entity/User.php.html#17">App\Entity\User</a></td><td class="text-right">408</td></tr>
+       <tr><td><a href="Entity/Category.php.html#15">App\Entity\Category</a></td><td class="text-right">129</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#18">App\Controller\CategoryController</a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Controller/ArticleController.php.html#19">App\Controller\ArticleController</a></td><td class="text-right">85</td></tr>
+       <tr><td><a href="Entity/Article.php.html#13">App\Entity\Article</a></td><td class="text-right">63</td></tr>
+       <tr><td><a href="Controller/RegistrationController.php.html#19">App\Controller\RegistrationController</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Kernel.php.html#10">App\Kernel</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="DataFixtures/ArticleFixtures.php.html#11">App\DataFixtures\ArticleFixtures</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="DataFixtures/UserFixtures.php.html#11">App\DataFixtures\UserFixtures</a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Security/Voter/ArticleVoter.php.html#10">App\Security\Voter\ArticleVoter</a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Repository/UserRepository.php.html#18">App\Repository\UserRepository</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DataFixtures/CategoryFixtures.php.html#10">App\DataFixtures\CategoryFixtures</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Controller/ArticleController.php.html#31"><abbr title="App\Controller\ArticleController::stateChange">stateChange</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#197"><abbr title="App\Entity\User::addArticle">addArticle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#80"><abbr title="App\Entity\User::getEmail">getEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#85"><abbr title="App\Entity\User::setEmail">setEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#114"><abbr title="App\Entity\User::setRoles">setRoles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#129"><abbr title="App\Entity\User::setPassword">setPassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#153"><abbr title="App\Entity\User::getLastName">getLastName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#158"><abbr title="App\Entity\User::setLastName">setLastName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#165"><abbr title="App\Entity\User::getFirstName">getFirstName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#170"><abbr title="App\Entity\User::setFirstName">setFirstName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#177"><abbr title="App\Entity\User::isVerified">isVerified</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#182"><abbr title="App\Entity\User::setIsVerified">setIsVerified</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#192"><abbr title="App\Entity\User::getArticles">getArticles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#207"><abbr title="App\Entity\User::removeArticle">removeArticle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#81"><abbr title="App\Entity\Category::removeArticle">removeArticle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/CategoryType.php.html#12"><abbr title="App\Form\CategoryType::buildForm">buildForm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/CategoryType.php.html#19"><abbr title="App\Form\CategoryType::configureOptions">configureOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/RegistrationFormType.php.html#17"><abbr title="App\Form\RegistrationFormType::buildForm">buildForm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Form/RegistrationFormType.php.html#50"><abbr title="App\Form\RegistrationFormType::configureOptions">configureOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Kernel.php.html#14"><abbr title="App\Kernel::configureContainer">configureContainer</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Kernel.php.html#27"><abbr title="App\Kernel::configureRoutes">configureRoutes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/UserRepository.php.html#28"><abbr title="App\Repository\UserRepository::upgradePassword">upgradePassword</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security/EmailVerifier.php.html#19"><abbr title="App\Security\EmailVerifier::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security/EmailVerifier.php.html#26"><abbr title="App\Security\EmailVerifier::sendEmailConfirmation">sendEmailConfirmation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Security/EmailVerifier.php.html#46"><abbr title="App\Security\EmailVerifier::handleEmailConfirmation">handleEmailConfirmation</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Twig/ToolsExtension.php.html#21"><abbr title="App\Twig\ToolsExtension::isString">isString</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Twig/ToolsExtension.php.html#26"><abbr title="App\Twig\ToolsExtension::isArray">isArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#70"><abbr title="App\Entity\User::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/User.php.html#75"><abbr title="App\Entity\User::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#71"><abbr title="App\Entity\Category::addArticle">addArticle</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/ArticleFixtures.php.html#13"><abbr title="App\DataFixtures\ArticleFixtures::getDependencies">getDependencies</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ArticleController.php.html#88"><abbr title="App\Controller\ArticleController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ArticleController.php.html#99"><abbr title="App\Controller\ArticleController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ArticleController.php.html#120"><abbr title="App\Controller\ArticleController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#24"><abbr title="App\Controller\CategoryController::index">index</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#35"><abbr title="App\Controller\CategoryController::new">new</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#59"><abbr title="App\Controller\CategoryController::show">show</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#70"><abbr title="App\Controller\CategoryController::edit">edit</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#91"><abbr title="App\Controller\CategoryController::delete">delete</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/RegistrationController.php.html#23"><abbr title="App\Controller\RegistrationController::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/RegistrationController.php.html#31"><abbr title="App\Controller\RegistrationController::register">register</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/RegistrationController.php.html#76"><abbr title="App\Controller\RegistrationController::verifyUserEmail">verifyUserEmail</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#66"><abbr title="App\Entity\Category::getArticles">getArticles</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/SecurityController.php.html#32"><abbr title="App\Controller\SecurityController::logout">logout</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/ArticleFixtures.php.html#20"><abbr title="App\DataFixtures\ArticleFixtures::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Article.php.html#123"><abbr title="App\Entity\Article::getAuthor">getAuthor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#56"><abbr title="App\Entity\Category::setName">setName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#46"><abbr title="App\Entity\Category::getId">getId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/CategoryFixtures.php.html#12"><abbr title="App\DataFixtures\CategoryFixtures::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Article.php.html#128"><abbr title="App\Entity\Article::setAuthor">setAuthor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Category.php.html#37"><abbr title="App\Entity\Category::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Article.php.html#104"><abbr title="App\Entity\Article::setPrice">setPrice</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Article.php.html#92"><abbr title="App\Entity\Article::setDescription">setDescription</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Entity/Article.php.html#80"><abbr title="App\Entity\Article::setName">setName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/UserFixtures.php.html#17"><abbr title="App\DataFixtures\UserFixtures::load">load</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="DataFixtures/UserFixtures.php.html#13"><abbr title="App\DataFixtures\UserFixtures::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Twig/ToolsExtension.php.html#36"><abbr title="App\Twig\ToolsExtension::isInt">isInt</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Controller/ArticleController.php.html#60"><abbr title="App\Controller\ArticleController::new">new</abbr></a></td><td class="text-right">57%</td></tr>
+       <tr><td><a href="Security/LoginAuthenticator.php.html#93"><abbr title="App\Security\LoginAuthenticator::onAuthenticationSuccess">onAuthenticationSuccess</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Security/Voter/ArticleVoter.php.html#25"><abbr title="App\Security\Voter\ArticleVoter::voteOnAttribute">voteOnAttribute</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="Security/Voter/ArticleVoter.php.html#42"><abbr title="App\Security\Voter\ArticleVoter::canUpdate">canUpdate</abbr></a></td><td class="text-right">80%</td></tr>
+       <tr><td><a href="Security/LoginAuthenticator.php.html#63"><abbr title="App\Security\LoginAuthenticator::getUser">getUser</abbr></a></td><td class="text-right">85%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Entity/Category.php.html#81"><abbr title="App\Entity\Category::removeArticle">removeArticle</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/ArticleController.php.html#99"><abbr title="App\Controller\ArticleController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#35"><abbr title="App\Controller\CategoryController::new">new</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#70"><abbr title="App\Controller\CategoryController::edit">edit</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Kernel.php.html#27"><abbr title="App\Kernel::configureRoutes">configureRoutes</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/RegistrationController.php.html#31"><abbr title="App\Controller\RegistrationController::register">register</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Kernel.php.html#14"><abbr title="App\Kernel::configureContainer">configureContainer</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Entity/User.php.html#207"><abbr title="App\Entity\User::removeArticle">removeArticle</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Controller/ArticleController.php.html#31"><abbr title="App\Controller\ArticleController::stateChange">stateChange</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/UserRepository.php.html#28"><abbr title="App\Repository\UserRepository::upgradePassword">upgradePassword</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/User.php.html#197"><abbr title="App\Entity\User::addArticle">addArticle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/User.php.html#165"><abbr title="App\Entity\User::getFirstName">getFirstName</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/User.php.html#153"><abbr title="App\Entity\User::getLastName">getLastName</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/User.php.html#80"><abbr title="App\Entity\User::getEmail">getEmail</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/User.php.html#75"><abbr title="App\Entity\User::getId">getId</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Category.php.html#71"><abbr title="App\Entity\Category::addArticle">addArticle</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Category.php.html#46"><abbr title="App\Entity\Category::getId">getId</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Article.php.html#128"><abbr title="App\Entity\Article::setAuthor">setAuthor</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Entity/Article.php.html#123"><abbr title="App\Entity\Article::getAuthor">getAuthor</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DataFixtures/UserFixtures.php.html#17"><abbr title="App\DataFixtures\UserFixtures::load">load</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DataFixtures/CategoryFixtures.php.html#12"><abbr title="App\DataFixtures\CategoryFixtures::load">load</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="DataFixtures/ArticleFixtures.php.html#20"><abbr title="App\DataFixtures\ArticleFixtures::load">load</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/RegistrationController.php.html#76"><abbr title="App\Controller\RegistrationController::verifyUserEmail">verifyUserEmail</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/CategoryController.php.html#91"><abbr title="App\Controller\CategoryController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/ArticleController.php.html#120"><abbr title="App\Controller\ArticleController::delete">delete</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Controller/ArticleController.php.html#60"><abbr title="App\Controller\ArticleController::new">new</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="Security/Voter/ArticleVoter.php.html#25"><abbr title="App\Security\Voter\ArticleVoter::voteOnAttribute">voteOnAttribute</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Security/Voter/ArticleVoter.php.html#42"><abbr title="App\Security\Voter\ArticleVoter::canUpdate">canUpdate</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Security/LoginAuthenticator.php.html#63"><abbr title="App\Security\LoginAuthenticator::getUser">getUser</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Security/LoginAuthenticator.php.html#93"><abbr title="App\Security\LoginAuthenticator::onAuthenticationSuccess">onAuthenticationSuccess</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 6.1.4</a> using <a href="https://secure.php.net/" target="_top">PHP 7.4.9</a> with <a href="https://xdebug.org/">Xdebug 2.9.6</a> and <a href="https://phpunit.de/">PHPUnit 7.5.20</a> at Tue Mar 9 15:14:00 UTC 2021.</small>
+    </p>
+   </footer>
+  </div>
+  <script src=".js/jquery.min.js" type="text/javascript"></script>
+  <script src=".js/d3.min.js" type="text/javascript"></script>
+  <script src=".js/nv.d3.min.js" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([9,0,2,2,0,0,1,1,1,1,1,4], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([57,0,0,0,0,0,1,2,0,2,0,36], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[28.57142857142857,14,"<a href=\"Controller\/ArticleController.php.html#19\">App\\Controller\\ArticleController<\/a>"],[0,10,"<a href=\"Controller\/CategoryController.php.html#18\">App\\Controller\\CategoryController<\/a>"],[100,1,"<a href=\"Controller\/DefaultController.php.html#9\">App\\Controller\\DefaultController<\/a>"],[0,6,"<a href=\"Controller\/RegistrationController.php.html#19\">App\\Controller\\RegistrationController<\/a>"],[75,2,"<a href=\"Controller\/SecurityController.php.html#10\">App\\Controller\\SecurityController<\/a>"],[0,3,"<a href=\"DataFixtures\/ArticleFixtures.php.html#11\">App\\DataFixtures\\ArticleFixtures<\/a>"],[0,2,"<a href=\"DataFixtures\/CategoryFixtures.php.html#10\">App\\DataFixtures\\CategoryFixtures<\/a>"],[0,3,"<a href=\"DataFixtures\/UserFixtures.php.html#11\">App\\DataFixtures\\UserFixtures<\/a>"],[59.09090909090909,24,"<a href=\"Entity\/Article.php.html#13\">App\\Entity\\Article<\/a>"],[11.76470588235294,13,"<a href=\"Entity\/Category.php.html#15\">App\\Entity\\Category<\/a>"],[19.444444444444446,27,"<a href=\"Entity\/User.php.html#17\">App\\Entity\\User<\/a>"],[100,2,"<a href=\"Form\/ArticleType.php.html#10\">App\\Form\\ArticleType<\/a>"],[0,2,"<a href=\"Form\/CategoryType.php.html#10\">App\\Form\\CategoryType<\/a>"],[0,2,"<a href=\"Form\/RegistrationFormType.php.html#15\">App\\Form\\RegistrationFormType<\/a>"],[0,6,"<a href=\"Kernel.php.html#10\">App\\Kernel<\/a>"],[100,1,"<a href=\"Repository\/ArticleRepository.php.html#15\">App\\Repository\\ArticleRepository<\/a>"],[100,1,"<a href=\"Repository\/CategoryRepository.php.html#15\">App\\Repository\\CategoryRepository<\/a>"],[25,3,"<a href=\"Repository\/UserRepository.php.html#18\">App\\Repository\\UserRepository<\/a>"],[0,3,"<a href=\"Security\/EmailVerifier.php.html#13\">App\\Security\\EmailVerifier<\/a>"],[92.5925925925926,13,"<a href=\"Security\/LoginAuthenticator.php.html#23\">App\\Security\\LoginAuthenticator<\/a>"],[80,9,"<a href=\"Security\/Voter\/ArticleVoter.php.html#10\">App\\Security\\Voter\\ArticleVoter<\/a>"],[62.5,5,"<a href=\"Twig\/ToolsExtension.php.html#9\">App\\Twig\\ToolsExtension<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Controller\/ArticleController.php.html#22\">App\\Controller\\ArticleController::__construct<\/a>"],[0,2,"<a href=\"Controller\/ArticleController.php.html#31\">App\\Controller\\ArticleController::stateChange<\/a>"],[100,1,"<a href=\"Controller\/ArticleController.php.html#49\">App\\Controller\\ArticleController::index<\/a>"],[57.14285714285714,4,"<a href=\"Controller\/ArticleController.php.html#60\">App\\Controller\\ArticleController::new<\/a>"],[0,1,"<a href=\"Controller\/ArticleController.php.html#88\">App\\Controller\\ArticleController::show<\/a>"],[0,3,"<a href=\"Controller\/ArticleController.php.html#99\">App\\Controller\\ArticleController::edit<\/a>"],[0,2,"<a href=\"Controller\/ArticleController.php.html#120\">App\\Controller\\ArticleController::delete<\/a>"],[0,1,"<a href=\"Controller\/CategoryController.php.html#24\">App\\Controller\\CategoryController::index<\/a>"],[0,3,"<a href=\"Controller\/CategoryController.php.html#35\">App\\Controller\\CategoryController::new<\/a>"],[0,1,"<a href=\"Controller\/CategoryController.php.html#59\">App\\Controller\\CategoryController::show<\/a>"],[0,3,"<a href=\"Controller\/CategoryController.php.html#70\">App\\Controller\\CategoryController::edit<\/a>"],[0,2,"<a href=\"Controller\/CategoryController.php.html#91\">App\\Controller\\CategoryController::delete<\/a>"],[100,1,"<a href=\"Controller\/DefaultController.php.html#14\">App\\Controller\\DefaultController::index<\/a>"],[0,1,"<a href=\"Controller\/RegistrationController.php.html#23\">App\\Controller\\RegistrationController::__construct<\/a>"],[0,3,"<a href=\"Controller\/RegistrationController.php.html#31\">App\\Controller\\RegistrationController::register<\/a>"],[0,2,"<a href=\"Controller\/RegistrationController.php.html#76\">App\\Controller\\RegistrationController::verifyUserEmail<\/a>"],[100,1,"<a href=\"Controller\/SecurityController.php.html#15\">App\\Controller\\SecurityController::login<\/a>"],[0,1,"<a href=\"Controller\/SecurityController.php.html#32\">App\\Controller\\SecurityController::logout<\/a>"],[0,1,"<a href=\"DataFixtures\/ArticleFixtures.php.html#13\">App\\DataFixtures\\ArticleFixtures::getDependencies<\/a>"],[0,2,"<a href=\"DataFixtures\/ArticleFixtures.php.html#20\">App\\DataFixtures\\ArticleFixtures::load<\/a>"],[0,2,"<a href=\"DataFixtures\/CategoryFixtures.php.html#12\">App\\DataFixtures\\CategoryFixtures::load<\/a>"],[0,1,"<a href=\"DataFixtures\/UserFixtures.php.html#13\">App\\DataFixtures\\UserFixtures::__construct<\/a>"],[0,2,"<a href=\"DataFixtures\/UserFixtures.php.html#17\">App\\DataFixtures\\UserFixtures::load<\/a>"],[100,1,"<a href=\"Entity\/Article.php.html#62\">App\\Entity\\Article::__construct<\/a>"],[100,1,"<a href=\"Entity\/Article.php.html#66\">App\\Entity\\Article::__toString<\/a>"],[100,2,"<a href=\"Entity\/Article.php.html#70\">App\\Entity\\Article::getId<\/a>"],[100,2,"<a href=\"Entity\/Article.php.html#75\">App\\Entity\\Article::getName<\/a>"],[0,1,"<a href=\"Entity\/Article.php.html#80\">App\\Entity\\Article::setName<\/a>"],[100,2,"<a href=\"Entity\/Article.php.html#87\">App\\Entity\\Article::getDescription<\/a>"],[0,1,"<a href=\"Entity\/Article.php.html#92\">App\\Entity\\Article::setDescription<\/a>"],[100,2,"<a href=\"Entity\/Article.php.html#99\">App\\Entity\\Article::getPrice<\/a>"],[0,1,"<a href=\"Entity\/Article.php.html#104\">App\\Entity\\Article::setPrice<\/a>"],[100,2,"<a href=\"Entity\/Article.php.html#111\">App\\Entity\\Article::getCategory<\/a>"],[100,2,"<a href=\"Entity\/Article.php.html#116\">App\\Entity\\Article::setCategory<\/a>"],[0,2,"<a href=\"Entity\/Article.php.html#123\">App\\Entity\\Article::getAuthor<\/a>"],[0,2,"<a href=\"Entity\/Article.php.html#128\">App\\Entity\\Article::setAuthor<\/a>"],[100,2,"<a href=\"Entity\/Article.php.html#135\">App\\Entity\\Article::getState<\/a>"],[100,1,"<a href=\"Entity\/Article.php.html#140\">App\\Entity\\Article::setState<\/a>"],[0,1,"<a href=\"Entity\/Category.php.html#37\">App\\Entity\\Category::__construct<\/a>"],[100,1,"<a href=\"Entity\/Category.php.html#42\">App\\Entity\\Category::__toString<\/a>"],[0,2,"<a href=\"Entity\/Category.php.html#46\">App\\Entity\\Category::getId<\/a>"],[100,2,"<a href=\"Entity\/Category.php.html#51\">App\\Entity\\Category::getName<\/a>"],[0,1,"<a href=\"Entity\/Category.php.html#56\">App\\Entity\\Category::setName<\/a>"],[0,1,"<a href=\"Entity\/Category.php.html#66\">App\\Entity\\Category::getArticles<\/a>"],[0,2,"<a href=\"Entity\/Category.php.html#71\">App\\Entity\\Category::addArticle<\/a>"],[0,3,"<a href=\"Entity\/Category.php.html#81\">App\\Entity\\Category::removeArticle<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#70\">App\\Entity\\User::__construct<\/a>"],[0,2,"<a href=\"Entity\/User.php.html#75\">App\\Entity\\User::getId<\/a>"],[0,2,"<a href=\"Entity\/User.php.html#80\">App\\Entity\\User::getEmail<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#85\">App\\Entity\\User::setEmail<\/a>"],[100,1,"<a href=\"Entity\/User.php.html#97\">App\\Entity\\User::getUsername<\/a>"],[100,1,"<a href=\"Entity\/User.php.html#105\">App\\Entity\\User::getRoles<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#114\">App\\Entity\\User::setRoles<\/a>"],[100,1,"<a href=\"Entity\/User.php.html#124\">App\\Entity\\User::getPassword<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#129\">App\\Entity\\User::setPassword<\/a>"],[100,1,"<a href=\"Entity\/User.php.html#139\">App\\Entity\\User::getSalt<\/a>"],[100,1,"<a href=\"Entity\/User.php.html#147\">App\\Entity\\User::eraseCredentials<\/a>"],[0,2,"<a href=\"Entity\/User.php.html#153\">App\\Entity\\User::getLastName<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#158\">App\\Entity\\User::setLastName<\/a>"],[0,2,"<a href=\"Entity\/User.php.html#165\">App\\Entity\\User::getFirstName<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#170\">App\\Entity\\User::setFirstName<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#177\">App\\Entity\\User::isVerified<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#182\">App\\Entity\\User::setIsVerified<\/a>"],[0,1,"<a href=\"Entity\/User.php.html#192\">App\\Entity\\User::getArticles<\/a>"],[0,2,"<a href=\"Entity\/User.php.html#197\">App\\Entity\\User::addArticle<\/a>"],[0,3,"<a href=\"Entity\/User.php.html#207\">App\\Entity\\User::removeArticle<\/a>"],[100,1,"<a href=\"Form\/ArticleType.php.html#12\">App\\Form\\ArticleType::buildForm<\/a>"],[100,1,"<a href=\"Form\/ArticleType.php.html#22\">App\\Form\\ArticleType::configureOptions<\/a>"],[0,1,"<a href=\"Form\/CategoryType.php.html#12\">App\\Form\\CategoryType::buildForm<\/a>"],[0,1,"<a href=\"Form\/CategoryType.php.html#19\">App\\Form\\CategoryType::configureOptions<\/a>"],[0,1,"<a href=\"Form\/RegistrationFormType.php.html#17\">App\\Form\\RegistrationFormType::buildForm<\/a>"],[0,1,"<a href=\"Form\/RegistrationFormType.php.html#50\">App\\Form\\RegistrationFormType::configureOptions<\/a>"],[0,3,"<a href=\"Kernel.php.html#14\">App\\Kernel::configureContainer<\/a>"],[0,3,"<a href=\"Kernel.php.html#27\">App\\Kernel::configureRoutes<\/a>"],[100,1,"<a href=\"Repository\/ArticleRepository.php.html#17\">App\\Repository\\ArticleRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/CategoryRepository.php.html#17\">App\\Repository\\CategoryRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/UserRepository.php.html#20\">App\\Repository\\UserRepository::__construct<\/a>"],[0,2,"<a href=\"Repository\/UserRepository.php.html#28\">App\\Repository\\UserRepository::upgradePassword<\/a>"],[0,1,"<a href=\"Security\/EmailVerifier.php.html#19\">App\\Security\\EmailVerifier::__construct<\/a>"],[0,1,"<a href=\"Security\/EmailVerifier.php.html#26\">App\\Security\\EmailVerifier::sendEmailConfirmation<\/a>"],[0,1,"<a href=\"Security\/EmailVerifier.php.html#46\">App\\Security\\EmailVerifier::handleEmailConfirmation<\/a>"],[100,1,"<a href=\"Security\/LoginAuthenticator.php.html#34\">App\\Security\\LoginAuthenticator::__construct<\/a>"],[100,2,"<a href=\"Security\/LoginAuthenticator.php.html#42\">App\\Security\\LoginAuthenticator::supports<\/a>"],[100,1,"<a href=\"Security\/LoginAuthenticator.php.html#48\">App\\Security\\LoginAuthenticator::getCredentials<\/a>"],[85.71428571428571,3,"<a href=\"Security\/LoginAuthenticator.php.html#63\">App\\Security\\LoginAuthenticator::getUser<\/a>"],[100,1,"<a href=\"Security\/LoginAuthenticator.php.html#80\">App\\Security\\LoginAuthenticator::checkCredentials<\/a>"],[100,2,"<a href=\"Security\/LoginAuthenticator.php.html#88\">App\\Security\\LoginAuthenticator::getPassword<\/a>"],[66.66666666666666,2,"<a href=\"Security\/LoginAuthenticator.php.html#93\">App\\Security\\LoginAuthenticator::onAuthenticationSuccess<\/a>"],[100,1,"<a href=\"Security\/LoginAuthenticator.php.html#102\">App\\Security\\LoginAuthenticator::getLoginUrl<\/a>"],[100,1,"<a href=\"Security\/Voter\/ArticleVoter.php.html#12\">App\\Security\\Voter\\ArticleVoter::__construct<\/a>"],[100,2,"<a href=\"Security\/Voter\/ArticleVoter.php.html#16\">App\\Security\\Voter\\ArticleVoter::supports<\/a>"],[66.66666666666666,3,"<a href=\"Security\/Voter\/ArticleVoter.php.html#25\">App\\Security\\Voter\\ArticleVoter::voteOnAttribute<\/a>"],[80,3,"<a href=\"Security\/Voter\/ArticleVoter.php.html#42\">App\\Security\\Voter\\ArticleVoter::canUpdate<\/a>"],[100,1,"<a href=\"Twig\/ToolsExtension.php.html#11\">App\\Twig\\ToolsExtension::getFunctions<\/a>"],[0,1,"<a href=\"Twig\/ToolsExtension.php.html#21\">App\\Twig\\ToolsExtension::isString<\/a>"],[0,1,"<a href=\"Twig\/ToolsExtension.php.html#26\">App\\Twig\\ToolsExtension::isArray<\/a>"],[100,1,"<a href=\"Twig\/ToolsExtension.php.html#31\">App\\Twig\\ToolsExtension::isBool<\/a>"],[0,1,"<a href=\"Twig\/ToolsExtension.php.html#36\">App\\Twig\\ToolsExtension::isInt<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

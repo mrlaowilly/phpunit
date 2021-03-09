@@ -30,4 +30,13 @@
     <listeners>
         <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />
     </listeners>
+
+    <extensions>
+        <extension class="Symfony\Component\Panther\ServerExtension" />
+    </extensions>
+
+    <logging>
+        <log type="coverage-html" target="coverage" lowUpperBound="45" highLowerBound="90"/>
+        <log type="junit" target="/tmp/logfile.xml"/>
+    </logging>
 </phpunit>
